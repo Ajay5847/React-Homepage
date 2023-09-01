@@ -1,5 +1,6 @@
 import React from 'react'
-import dummy from '../../assets/addiction.jpeg'
+import dummy from '../../assets/addiction1.jpg'
+import './Description.scss'
 
 function Description() {
   return (
