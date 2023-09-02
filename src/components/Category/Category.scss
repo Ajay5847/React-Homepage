@@ -6,7 +6,8 @@
     align-items: center;
 
     .hero {
-    height: 80%;
+    height: 80vh;
+    width: 100%;
     background-image: url("../../assets/AesopSprays.avif");
     background-repeat: no-repeat;
     background-size: cover;
@@ -93,7 +94,7 @@
                     text-align: left;
                 }
 
-                .primary-btn-category {
+                .primary-btn-category1 {
                     display: flex;
                     align-items: center;
                     justify-content: space-around;
@@ -119,7 +120,7 @@
                     }
                 }
         
-                .primary-btn-category:hover {
+                .primary-btn-category1:hover {
                     background-color: #232222;
                     color: white;
                 }
@@ -127,4 +128,40 @@
         }  
     }
   }
+}
+
+@media screen and (max-width: 768px){ 
+    .Category {
+        .hero {
+            height: 60vh;
+
+            .Category-content {
+                .right {
+                    width: 60%;
+                    margin-inline: auto;
+
+                    .primary-btn-category {
+                        font-size: 0.7rem;
+                        width: 200px;
+                    }
+                }
+
+            }
+        }
+
+        .hero2 {
+            .hero2-right {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .right-right{
+                    .primary-btn-category1 {
+                        font-size: 0.7rem;
+                        width: 200px;
+                    }
+                }
+            }
+        }
+    }
 }

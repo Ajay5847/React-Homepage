@@ -5,6 +5,7 @@
     height: 600px;
     flex: 1;
     flex-grow: 0;
+    flex-wrap: wrap;
     align-self: stretch;
     transition: 0.3s ease-in;
 
@@ -98,13 +99,13 @@
 }
 
 @media screen and (max-width: 768px){ 
-    .Product {
+    .ProductDetail {
         width: 48%;
     }
 }
 
 @media screen and (max-width: 480px){ 
-    .Product {
+    .ProductDetail {
         width: 100%;
     }
 }
