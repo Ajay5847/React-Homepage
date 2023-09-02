@@ -1,0 +1,54 @@
+import React from "react";
+import "./Category.scss";
+import ProductDetail from "../ProductDetail/ProductDetail";
+
+function Category() {
+  return (
+    <>
+      <div className="Category">
+        <div className="hero">
+          <div className="Category-content">
+            <div className="right">
+              <p className="main-heading">Recent addiction</p>
+              <h2 className="main-head">Post-Poo Drops</h2>
+              <p className="content">
+                While we may think of these products as for the home—the
+                bedroom, the mantelpiece, the window sill—many are equally as
+                suitable in other settings, including the office, the hotel room
+                or the car, to enhance the interior.
+              </p>
+              <div className="primary-btn-category" id="prod">
+                Discover Post-Poo Drops
+              </div>
+            </div>
+          </div>
+          <div className="down-images">
+            <h2 className="browse-products">Aromatically alike</h2>
+            <div className="product-list">
+              <ProductDetail />
+              <ProductDetail />
+              <ProductDetail />
+            </div>
+          </div>
+          <div className="hero2">
+            <div className="hero2-right">
+              <div className="right-left">
+                <h2 className="main-heading">For additional assistance</h2>
+              </div>
+              <div className="right-right">
+                <p className="content">
+                If you would like more guidance finding a formulation, our consultants are available to help via live assistance.
+                </p>
+                <div className="primary-btn-category" id="prod">
+                  Discover Post-Poo Drops
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+}
+
+export default Category;

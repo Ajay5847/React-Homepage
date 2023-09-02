@@ -1,0 +1,103 @@
+.Category {
+    background-color: rgb(255, 255, 255);
+    padding-block: 50px;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    .hero {
+    height: 80%;
+    background-image: url("../../assets/AesopSprays.avif");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .Category-content {
+      height: 100%;
+      display: flex;
+      gap: 10px;
+
+      .right{
+        margin: 40px 0px 0px 70px;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: left;
+
+        .primary-btn-category {
+            margin-top: 4px;
+            width: 300px;
+            padding: 12px 16px;
+            border: 1px solid grey;
+            color: rgba($color: #232222, $alpha: 1.0);
+            cursor: pointer;
+            font-weight: 600;
+            user-select: none;
+            transition: 0.5s ease-in;
+        }
+
+        .primary-btn-category:hover {
+            background-color: #232222;
+            color: white;
+        }
+      }
+    }
+
+    .down-images {
+        margin-top: 100px;
+        background-color: rgba($color: #eae5e5, $alpha: 1.0);
+
+        .browse-products {
+            padding-block: 20px;
+        }
+    }
+
+    .hero2{
+        background-color: #d9d3d3;
+        margin-top: 100px;
+        height: 80%;
+
+        .hero2-right {
+            height: 100%;
+            display: flex;
+            margin-inline: 70px;
+
+            .right-left{
+                flex: 1;
+                display: flex;
+                align-items: center;
+                justify-content: left;
+                border: 1px solid red;
+            }
+
+            .right-right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                border: 1px solid red;
+
+                .content {
+                    text-align: left;
+                }
+
+                .primary-btn-category {
+                    margin-top: 4px;
+                    width: 300px;
+                    padding: 12px 16px;
+                    border: 1px solid grey;
+                    color: rgba($color: #232222, $alpha: 1.0);
+                    cursor: pointer;
+                    font-weight: 600;
+                    user-select: none;
+                    transition: 0.5s ease-in;
+                }
+        
+                .primary-btn-category:hover {
+                    background-color: #232222;
+                    color: white;
+                }
+            }
+        }  
+    }
+  }
+}

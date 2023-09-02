@@ -2,6 +2,7 @@ import React from "react";
 import dummy from "../../assets/addiction1.jpg";
 import "./Description.scss";
 import ProductDetail from "../ProductDetail/ProductDetail";
+import Category from "../Category/Category";
 
 function Description() {
   return (
@@ -41,6 +42,7 @@ function Description() {
           <ProductDetail />
         </div>
       </div>
+      <Category />
     </div>
   );
 }
