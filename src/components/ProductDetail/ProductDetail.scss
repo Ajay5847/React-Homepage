@@ -1,0 +1,110 @@
+.ProductDetail {
+
+    cursor: pointer;
+    min-width: 33%;
+    height: 600px;
+    flex: 1;
+    flex-grow: 0;
+    align-self: stretch;
+    transition: 0.3s ease-in;
+
+    .product-container {
+        .product-img{
+            position: relative;
+            height: 300px;
+            width: 100%;
+            
+            .image {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+
+                img {
+                    background-color: transparent;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain;
+                    transform: scale(0.9);
+                    transition: 0.2s ease;
+                }
+            }
+        }
+
+        .product-info {
+            text-align: center;
+            margin-inline: 30px;
+            padding: 8px;
+            border-bottom: 2px solid black;
+
+            .price {
+                color: var(--primary-text-color);
+                font-weight: 700;
+                margin-block: 16px;
+            }
+        }
+
+        .aroma{
+            display: flex;
+            align-items: center;
+            margin-inline: 30px;
+            padding-block: 15px;
+            gap: 60px;
+            border-bottom: 2px solid rgb(175, 171, 171);
+
+
+            .head{
+                font-size: 0.9rem;
+                margin-block: auto;
+            }
+
+            .desc{
+                font-size: 0.9rem;
+                margin-block: auto;
+                text-align: left;
+            }
+
+            .desc1 {
+                font-size: 0.9rem;
+                margin-block: auto;
+                margin-left: -30px;
+                text-align: left;
+            }
+        }
+
+        .primary-btn {
+            margin-top: 4px;
+            padding: 12px 16px;
+            background-color: rgba($color: #eae5e5, $alpha: 1.0);
+            color: rgba($color: #eae5e5, $alpha: 1.0);
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            font-weight: 600;
+            user-select: none;
+            transition: 0.5s ease-in;
+        }
+
+        .primary-btn:hover {
+            background-color: #000000;
+            color: #eae5e5;
+          }
+    }
+}
+
+.ProductDetail:hover {
+    background-color: rgba($color: #ffffff, $alpha: 0.5);
+}
+
+@media screen and (max-width: 768px){ 
+    .Product {
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 480px){ 
+    .Product {
+        width: 100%;
+    }
+}
