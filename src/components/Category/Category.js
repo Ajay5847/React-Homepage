@@ -1,5 +1,6 @@
 import React from "react";
 import "./Category.scss";
+import {AiOutlineArrowRight} from 'react-icons/ai'
 import ProductDetail from "../ProductDetail/ProductDetail";
 
 function Category() {
@@ -18,7 +19,8 @@ function Category() {
                 or the car, to enhance the interior.
               </p>
               <div className="primary-btn-category" id="prod">
-                Discover Post-Poo Drops
+              <p className="primary-content">Discover Post-Poo Drops</p>
+                <div className="icon"><AiOutlineArrowRight/></div>
               </div>
             </div>
           </div>
@@ -40,7 +42,8 @@ function Category() {
                 If you would like more guidance finding a formulation, our consultants are available to help via live assistance.
                 </p>
                 <div className="primary-btn-category" id="prod">
-                  Discover Post-Poo Drops
+                  <p className="primary-content">Speak to a real consultant</p>
+                  <div className="icon"><AiOutlineArrowRight/></div>
                 </div>
               </div>
             </div>
